@@ -1,7 +1,11 @@
-import React from 'react'
-
-export default function App() {
+import React from 'react';
+import PagesRouter from './route'
+function App(props:any) {
     return (
-        <div>App</div>
-    )
+        <div>
+            <PagesRouter/>
+        </div>
+    );
 }
+
+export default App;

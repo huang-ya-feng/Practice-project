@@ -1,18 +1,14 @@
-import React, {useEffect, useRef} from 'react';
-import Login1 from "./login1";
+import React from 'react'
+import { connect } from 'react-redux'
 
-function Login(props:any) {
-
-    useEffect(()=>{
-
-    },[])
-    return (
-        <div>
-           <h2>父组件</h2>
-            <br/>
-            <Login1/>
-        </div>
-    );
+export const Login = (props:any) => {
+  return (
+    <div>Login</div>
+  )
 }
 
-export default Login;
+const mapStateToProps = (state:any) => ({})
+
+const mapDispatchToProps = {}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login)

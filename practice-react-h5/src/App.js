@@ -1,5 +1,5 @@
 import React from 'react'
-import ViewsRouter from './views/index'
+import ViewsRouter from './router/index'
 export default function App() {
     
     return (

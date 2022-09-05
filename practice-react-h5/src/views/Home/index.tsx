@@ -1,13 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-export const Home = (props) => {
+export const Home = (props: any) => {
   return (
     <div>index</div>
   )
 }
 
-const mapStateToProps = (state) => ({})
+const mapStateToProps = (state: any) => ({})
 
 const mapDispatchToProps = {}
 

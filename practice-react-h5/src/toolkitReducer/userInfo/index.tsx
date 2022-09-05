@@ -15,8 +15,8 @@ let userSlice = createSlice({
 
 const { queryUser } = userSlice.actions
 
-const asyncQuery = (payload) => {
-    return (dispatch) => {
+const asyncQuery = (payload: any) => {
+    return (dispatch: any) => {
         setTimeout(() => {
             dispatch(queryUser(payload))
         }, 5000);

@@ -1,14 +1,11 @@
-import React from 'react'
-import { connect } from 'react-redux'
+import React from 'react';
 
-export const Home = (props: any) => {
-  return (
-    <div>index</div>
-  )
+function Index(props:any) {
+    return (
+        <div>
+
+        </div>
+    );
 }
 
-const mapStateToProps = (state: any) => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default Index;

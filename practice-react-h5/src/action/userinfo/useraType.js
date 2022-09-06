@@ -1,5 +1,7 @@
-const useraAction={
+const useraType={
     'QUERY':'query',
-    'ADD':"add"
+    'ADD':"add",
+    "DEL":"del",
+    "REVISE":'revise'
 }
-export default useraAction;
+export default useraType;

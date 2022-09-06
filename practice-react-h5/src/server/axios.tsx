@@ -1,6 +1,7 @@
 import axios from "axios";
-//拦截器的配置
-//请求头拦截
+
+// 拦截器的配置
+// 请求头拦截
 axios.interceptors.request.use((config: any) => {
     // 在发送请求之前做些什么
     if (window.localStorage.getItem("token")) {
@@ -11,7 +12,7 @@ axios.interceptors.request.use((config: any) => {
     // 对请求错误做些什么
     return Promise.reject(error);
 });
-//响应头拦截
+// 响应头拦截
 axios.interceptors.response.use(response => {
     return response;
 }, error => {
@@ -19,10 +20,13 @@ axios.interceptors.response.use(response => {
         switch (error.response.status) {
             // 返回401，清除token信息并跳转到登录页面
             case 404:
-                alert("跳到错误页面");
+                alert("返回登录页");
+
+
                 break;
             case 500:
                 alert("接口调用错误")
+
                 break;
         }
         // 返回接口返回的错误信息
